@@ -1,7 +1,0 @@
-DATAFLOW_VERSION=2.2.1.RELEASE SKIPPER_VERSION=2.1.2.RELEASE docker-compose up
-
-
-
-DATAFLOW_VERSION=2.2.1.RELEASE SKIPPER_VERSION=2.1.2.RELEASE docker-compose down
-http://localhost:9393/dashboard/
-
