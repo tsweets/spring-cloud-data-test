@@ -63,9 +63,9 @@ services:
     command: >
       /bin/sh -c "
         ./wait-for-it.sh -t 180 dataflow-server:9393;
-        wget -qO- 'http://dataflow-server:9393/apps' --post-data='uri=https://dataflow.spring.io/kafka-maven-latest&force=true';
+        wget -e use_proxy=yes -e http_proxy=http://proxy.ext.ray.com:80 -qO- 'http://dataflow-server:9393/apps' --post-data='uri=https://dataflow.spring.io/kafka-maven-latest&force=true';
         echo 'Stream apps imported'
-        wget -qO- 'http://dataflow-server:9393/apps' --post-data='uri=https://dataflow.spring.io/task-maven-latest&force=true';
+        wget -e use_proxy=yes -e http_proxy=http://proxy.ext.ray.com:80 -qO- 'http://dataflow-server:9393/apps' --post-data='uri=https://dataflow.spring.io/task-maven-latest&force=true';
         echo 'Task apps imported'"
 
   skipper-server:
