@@ -1,4 +1,4 @@
-package org.beer30.org.beer30.batchIntegration;
+package org.beer30.batchIntegration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

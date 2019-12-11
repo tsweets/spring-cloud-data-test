@@ -1,4 +1,4 @@
-package org.beer30.org.beer30.batchIntegration;
+package org.beer30.batchIntegration;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParametersBuilder;
